@@ -1,0 +1,85 @@
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--st-gap);
+    padding: 0 var(--st-h-padding) 4rem var(--st-h-padding);
+
+    .container {
+        width: 100%;
+        flex-shrink: 0;
+        background-color: white;
+        color: hsl(var(--c1), 10%);
+        height: 35rem;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        .wrap {
+            height: 0;
+            overflow: hidden;
+            background-color: hsla(var(--c1), 95%, 80%);
+            padding: 0 1rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        &:hover>.wrap {
+            padding: 1rem;
+            height: 100%;
+        }
+
+        &:nth-child(1) {
+            background-image: url("../assets/pngs/blacksnap-thumbnail.png");
+            background-size: cover;
+            background-position: 65% 50%;
+        }
+
+        &:nth-child(2) {
+            background-image: url("../assets/pngs/awa-thumbnail.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        &:nth-child(3) {
+            background-image: url("../assets/pngs/clemson-thumbnail.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        &:nth-child(4) {
+            background-image: url("../assets/pngs/georgiatech-thumbnail.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        &:nth-child(5) {
+            background-image: url("../assets/pngs/Atelier.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        &:nth-child(6) {
+            background-image: url("../assets/pngs/tactile.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+    }
+
+    a{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: hsl(var(--c1), 10%);
+    }
+}
+
+@media (max-width: 960px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .works-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,249 @@
+:root {
+    font-family: sans-serif;
+    font-size: 12px;
+
+    scroll-behavior: smooth;
+
+    /* num var */
+    --st-h-padding: 3rem;
+    --st-gap: 3rem;
+    --sm-gap: 2rem;
+
+    /* Color Var*/
+    /* Teal */
+    --c0-p95: 170, 100%, 95%;
+    --c0-p90: 170, 100%, 90%;
+    --c0-p80: 170, 100%, 80%;
+    --c0-p70: 170, 100%, 70%;
+    --c0-p60: 170, 100%, 60%;
+    --c0-p50: 170, 100%, 50%;
+    --c0-p40: 170, 100%, 40%;
+    --c0-p30: 170, 100%, 30%;
+    --c0-p20: 170, 100%, 20%;
+    --c0-p10: 170, 100%, 10%;
+    --c0-p05: 170, 100%, 05%;
+    /* Red */
+    --c1-p95: 338, 100%, 95%;
+    --c1-p90: 338, 100%, 90%;
+    --c1-p80: 338, 100%, 80%;
+    --c1-p70: 338, 100%, 70%;
+    --c1-p60: 338, 100%, 60%;
+    --c1-p50: 338, 100%, 50%;
+    --c1-p40: 338, 100%, 40%;
+    --c1-p30: 338, 100%, 30%;
+    --c1-p20: 338, 100%, 20%;
+    --c1-p10: 338, 100%, 10%;
+    --c1-p05: 338, 100%, 05%;
+    /* Purple */
+    --c2-p95: 249, 5%, 95%;
+    --c2-p90: 249, 15%, 90%;
+    --c2-p80: 249, 25%, 80%;
+    --c2-p70: 249, 35%, 70%;
+    --c2-p60: 249, 45%, 60%;
+    --c2-p50: 249, 55%, 50%;
+    --c2-p40: 249, 65%, 40%;
+    --c2-p30: 249, 75%, 30%;
+    --c2-p20: 249, 85%, 20%;
+    --c2-p10: 249, 95%, 10%;
+    --c2-p05: 249, 100%, 05%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+
+    * {
+        margin: 0;
+
+        transition: all .5s ease-in;
+        -moz-transition: all .5s ease-in;
+        -ms-transition: all .5s ease-in;
+        -o-transition: all .5s ease-in;
+        -webkit-transition: all .5s ease-in;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}
+
+p{
+    font-size: 1.75rem;
+}
+
+/* Layouts */
+.header-0 {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem var(--st-h-padding);
+    gap: var(--st-gap);
+
+    h1 {
+        font-size: 8rem;
+        text-transform: uppercase;
+        position: relative;
+        color: hsl(var(--c1-p40));
+        font-style: italic;
+
+        &::after {
+            content: "Theseus";
+            position: absolute;
+            top: -2px;
+            left: -3px;
+            color: none;
+            -webkit-text-fill-color: hsla(0, 0%, 0%, 0%);
+            -webkit-text-stroke: 2px hsl(var(--c0-p50));
+            mix-blend-mode: multiply;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 37.5rem;
+        border-radius: 1rem;
+        background: linear-gradient(96deg, hsl(var(--c0-p50)) 0%, hsl(var(--c1-p50)) 100%);
+    }
+}
+
+/* Has text on one side and  */
+.layout-0 {
+    display: flex;
+    flex-direction: row;
+    min-height: 450px;
+
+    &>* {
+        width: 50%;
+        flex: 1;
+    }
+
+    &>img {
+        object-fit: cover;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--st-gap);
+        padding: var(--st-h-padding);
+        background-color: hsl(var(--c1-p40));
+    }
+
+    &.rev {
+        flex-direction: row-reverse;
+    }
+}
+
+.layout-1 {
+    padding: 4rem var(--st-h-padding);
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    gap: var(--st-gap);
+    background-color: hsl(var(--c2-p10));
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem var(--st-h-padding);
+    background-color: hsl(var(--c0-p40));
+
+    &>*:nth-child(1) {
+        color: hsl(var(--c2-p30));
+    }
+
+    &>*:nth-child(2) {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: row;
+        gap: var(--st-gap);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        &>* {
+            scroll-snap-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: var(--st-gap);
+            width: 70%;
+            min-width: 300px;
+            height: 35rem;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: hsl(var(--c1-p40));
+            flex-shrink: 0;
+
+            &>.wrap {
+                height: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                background-color: hsla(var(--c0-p10), 40%);
+                color: white;
+            }
+
+            &:hover>.wrap {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.layout-3{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &>*:nth-child(1){
+        grid-column: span 2;
+        padding: var(--st-h-padding);
+        display: flex;
+        flex-direction: column;
+        gap: var(--st-gap);
+        background-color: hsl(var(--c1-p60));
+    }
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: var(--st-h-padding);
+    color: hsl(var(--c2-p40));
+    gap: var(--sm-gap);
+
+    img{
+        width: 6rem;
+        height: 6rem;
+        border: 1px solid black;
+        border-radius: 100%;
+
+    }
+
+    &>*{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: start;
+        align-items: center;
+
+        &>*{
+            display: flex;
+            flex-direction: column;
+
+            &>*:nth-child(2){
+                font-weight: bold;
+            }
+        }
+    }
+}
