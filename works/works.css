@@ -20,6 +20,7 @@
             padding: 0 1rem;
             width: 100%;
             text-align: center;
+            gap: 0;
         }
 
         &:hover>.wrap {
@@ -30,7 +31,7 @@
         &:nth-child(1) {
             background-image: url("../assets/pngs/blacksnap-thumbnail.png");
             background-size: cover;
-            background-position: 65% 50%;
+            background-position: 50% 50%;
         }
 
         &:nth-child(2) {
@@ -64,10 +65,14 @@
         }
     }
 
-    a{
-        font-size: 2.5rem;
+    
+    a,.soon {
+        font-size: 2rem;
         font-weight: bold;
         color: hsl(var(--c1), 10%);
+    }
+    .soon{
+        opacity: .7;
     }
 }
 

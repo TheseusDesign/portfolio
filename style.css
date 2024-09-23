@@ -49,8 +49,9 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1.25rem;
 }
-@media(max-width: 840px){
-    h1{
+
+@media(max-width: 840px) {
+    h1 {
         font-size: 13vw;
     }
 }
@@ -59,8 +60,9 @@ h2 {
     font-size: 6rem;
     text-transform: capitalize;
 }
-@media(max-width: 840px){
-    h2{
+
+@media(max-width: 840px) {
+    h2 {
         font-size: 4rem;
     }
 }
@@ -76,7 +78,13 @@ p {
     line-height: 150%;
 }
 
-nav{
+@media(max-width: 840px) {
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+nav {
     padding: 2rem var(--st-h-padding);
     display: flex;
     flex-direction: row;
@@ -84,13 +92,13 @@ nav{
     align-items: center;
     width: 100%;
     position: fixed;
-    background-color:hsla(var(--c1), 5%, 10%);
+    background-color: hsla(var(--c1), 5%, 10%);
 
-    &:hover{
-        background-color:hsla(var(--c1), 5%, 85%);
+    &:hover {
+        background-color: hsla(var(--c1), 5%, 85%);
     }
 
-    ul{
+    ul {
         display: flex;
         flex-direction: row;
         justify-content: end;
@@ -99,14 +107,24 @@ nav{
         list-style: none;
         padding: 0;
 
-        li{
+        li {
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: .5rem;
 
-            a{
+
+            a {
                 color: white;
                 text-decoration: none;
+            }
+
+            &.active a {
+                color: hsl(var(--c0), 80%);
+                pointer-events: none;
+            }
+
+            &:hover {
+                scale: 1.1;
             }
         }
     }
@@ -204,7 +222,7 @@ header {
         object-fit: cover;
     }
 
-    a{
+    a {
         font-size: 2.5rem;
         font-weight: bold;
         color: hsl(var(--c1), 95%);
@@ -260,6 +278,7 @@ header {
                 padding: 0 1rem;
                 width: 100%;
                 text-align: center;
+                gap: 1rem;
             }
 
             &:hover>.wrap {
@@ -267,22 +286,25 @@ header {
                 height: 100%;
             }
 
-            &:nth-child(1){
+            &:nth-child(1) {
                 background-image: url("assets/pngs/blacksnap-thumbnail.png");
                 background-size: cover;
                 background-position: 65% 50%;
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 background-image: url("assets/pngs/awa-thumbnail.png");
                 background-size: cover;
                 background-position: 50% 50%;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 background-image: url("assets/pngs/clemson-thumbnail.png");
                 background-size: cover;
                 background-position: 50% 50%;
             }
-            &:nth-child(4){
+
+            &:nth-child(4) {
                 background-image: url("assets/pngs/georgiatech-thumbnail.png");
                 background-size: cover;
                 background-position: 50% 50%;
@@ -290,10 +312,15 @@ header {
         }
     }
 
-    a{
-        font-size: 2.5rem;
+    a,
+    .soon {
+        font-size: 2rem;
         font-weight: bold;
         color: hsl(var(--c1), 10%);
+    }
+
+    .soon {
+        opacity: .7;
     }
 }
 
@@ -331,6 +358,12 @@ header {
     }
 }
 
+@media(max-width: 840px) {
+    .layout-3 .testimonial {
+        padding: 3rem 2rem;
+    }
+}
+
 .layout-4 {
     padding: 4rem var(--st-h-padding);
     background-color: hsl(var(--c1), 10%);
@@ -360,6 +393,167 @@ header {
                 flex: 1;
                 font-size: 2.5rem;
             }
+        }
+    }
+}
+
+@media(max-width: 840px) {
+    .layout-4 ul li {
+        padding: 1rem 3rem;
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.layout-5 {
+    padding: 4rem var(--st-h-padding);
+    text-align: center;
+    background-color: hsl(var(--c2), 10%);
+
+    p {
+        max-width: 1100px;
+    }
+}
+
+.layout-6 {
+    padding: 4rem var(--st-h-padding);
+    text-align: center;
+
+    .content {
+        flex-wrap: wrap;
+
+        &>a {
+            height: 450px;
+            min-width: 300px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            flex: 1;
+            text-decoration: none;
+            color:hsl(var(--c1), 10%);
+            border-radius: 1rem;
+            overflow: hidden;
+
+            p{
+                padding: .5rem 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-decoration: none;
+                letter-spacing: .5rem;
+                background-color: hsla(var(--c1), 95%, 90%);
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.layout-7{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--st-gap);
+    padding: 0 var(--st-h-padding) 4rem var(--st-h-padding);
+
+    
+    h2{
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        flex-shrink: 0;
+        background-color: white;
+        color: hsl(var(--c1), 10%);
+        height: 35rem;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        .wrap {
+            height: 0;
+            overflow: hidden;
+            background-color: hsla(var(--c1), 95%, 80%);
+            padding: 0 1rem;
+            width: 100%;
+            text-align: center;
+            gap: 0;
+        }
+
+        &:hover>.wrap {
+            padding: 1rem;
+            height: 100%;
+        }
+
+
+        &:nth-child(2) {
+            background-image: url("../assets/pngs/blacksnap-thumbnail.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        &:nth-child(3) {
+            background-image: url("../assets/pngs/awa-thumbnail.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        &:nth-child(4) {
+            background-image: url("../assets/pngs/clemson-thumbnail.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        &:nth-child(5) {
+            background-image: url("../assets/pngs/georgiatech-thumbnail.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        &:nth-child(6) {
+            background-image: url("../assets/pngs/Atelier.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        &:nth-child(7) {
+            background-image: url("../assets/pngs/tactile.png");
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+    }
+
+    
+    a,.soon {
+        font-size: 2rem;
+        font-weight: bold;
+        color: hsl(var(--c1), 10%);
+    }
+    .soon{
+        opacity: .7;
+    }
+}
+
+@media (max-width: 960px) {
+    .layout-7{
+        grid-template-columns: repeat(2, 1fr);
+
+        h2{
+            grid-column: span 2;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .layout-7 {
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            grid-column: span 1;
         }
     }
 }
@@ -415,25 +609,27 @@ footer {
     }
 }
 
-@media (max-width: 1100px){
-    footer{
-        grid-template-columns: repeat(2,1fr);
+@media (max-width: 1100px) {
+    footer {
+        grid-template-columns: repeat(2, 1fr);
 
-        .title{
+        .title {
             grid-column: span 2;
         }
-        .contact,.links{
+
+        .contact,
+        .links {
             grid-column: span 1;
         }
     }
 }
 
-@media (max-width: 760px){
-    footer{
+@media (max-width: 760px) {
+    footer {
         display: flex;
         flex-direction: column;
 
-        h2{
+        h2 {
             font-size: 4rem;
         }
     }
@@ -474,6 +670,7 @@ footer {
     }
 }
 
-.layout-1 h2, .layout-2 h2{
+.layout-1 h2,
+.layout-2 h2 {
     color: hsl(var(--c1), 15%);
 }
