@@ -8,6 +8,24 @@
         font-size: 8.5vw;
     }
 }
+@media(max-width: 900px) {
+    .layout-0 img{
+        max-height: 750px;
+    }
+}
+
+
+header img{
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#gallery.layout-7 img:nth-child(4){
+    background-color: hsl(var(--c3), 80%);
+}
+
 
 .layout-6{
     a:nth-child(1){
