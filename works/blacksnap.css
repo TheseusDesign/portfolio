@@ -1,0 +1,36 @@
+@media(max-width: 1100px) {
+    h1 {
+        font-size: 12vw;
+    }
+}
+@media(max-width: 700px) {
+    h1 {
+        font-size: 8.5vw;
+    }
+}
+
+.layout-6{
+    a:nth-child(1){
+        background-image: url(../assets/blacksnap/Mockup\ of\ Brand\ Book.jpg);
+        background-position: 60% 50%;
+        background-size: cover;
+    }
+    a:nth-child(2){
+        background-image: url(../assets/blacksnap/laptop\ phone\ mockup.png);
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    a:nth-child(3){
+        background-image: url(../assets/blacksnap/Business\ Card\ Mockup\ Vol\ 09.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    a:nth-child(1):hover,
+    a:nth-child(2):hover,
+    a:nth-child(3):hover
+    {
+        /* background-size: 200%; */
+        scale: .97;
+    }
+}

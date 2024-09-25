@@ -1,3 +1,13 @@
 .layout-7{
     padding: 6rem var(--st-h-padding);
 }
+
+.theme-0 .content{
+    background-color: hsl(var(--c3), 30%);
+}
+.theme-1 .content{
+    background-color: hsl(var(--c1), 10%);
+}
+.theme-2 .content{
+    background-color: hsl(var(--c2), 20%);
+}
