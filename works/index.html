@@ -17,8 +17,16 @@
     <meta name="description" content="Work done by Atlanta based Designer & Developer">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="works.css">
+    <script src="../scripts/loader.js" defer></script>
+    
 </head>
 <body>
+    <div id="onload">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+            type="module"></script>
+        <dotlottie-player src="../assets/json/loader.json" background="transparent" speed=".5" direction="1"
+            playMode="bounce" loop autoplay></dotlottie-player>
+    </div>
     <nav>
         <ul>
             <li><a href="../">Home</a></li>
@@ -84,7 +92,7 @@
             <p><a href="">+1 (678) 508 - 8467</a></p>
             <p><a href="">theseus.design@gmail.com</a></p>
         </div>
-        <div class="links col">
+        <div class="links col" style="display: none">
             <h3>Work</h3>
             <ul class="row">
                 <li></li>

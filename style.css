@@ -43,6 +43,17 @@ body {
     }
 }
 
+#onload{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: hsla(var(--c1), 95%, 60%);
+    backdrop-filter: blur(12px);
+    z-index: 2;
+}
+
 /* Fonts */
 h1 {
     font-size: 12rem;
