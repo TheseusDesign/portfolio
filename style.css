@@ -361,7 +361,7 @@ header {
 
     .testimonial {
         background-color: hsl(var(--c1), 99%);
-        padding: 6rem 2rem;
+        padding: 3rem 2rem;
         border-radius: 1rem;
         color: hsl(var(--c1), 10%);
 
