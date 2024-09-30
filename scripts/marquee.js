@@ -22,6 +22,15 @@ let companies = [
     `Stetson`,
     `iFOLIO`,
     `UNLV`,
+    `Black Snap`,
+    `Georgia Tech`,
+    `Soapbox Star`,
+    `AWA`,
+    `Stetson`,
+    `MusicMob`,
+    `Stetson`,
+    `iFOLIO`,
+    `UNLV`,
 ]
 
 let spacing = 275;

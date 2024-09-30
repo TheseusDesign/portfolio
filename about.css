@@ -1,0 +1,9 @@
+.layout-0.p0 .content{
+    background-color: hsl(var(--c0), 30%);
+}
+.layout-0.p1 .content{
+    background-color: hsl(var(--c3), 10%);
+}
+.layout-0.p2 .content{
+    background-color: hsl(var(--c4), 50%);
+}
