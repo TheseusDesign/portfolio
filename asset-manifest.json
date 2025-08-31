@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.cad3f3d9.css",
-    "main.js": "./static/js/main.b8f6e351.js",
+    "main.css": "./static/css/main.2bccf3f5.css",
+    "main.js": "./static/js/main.88df21f9.js",
     "static/js/453.1dd711a6.chunk.js": "./static/js/453.1dd711a6.chunk.js",
-    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/MetGala.png": "./static/media/MetGala.8c234a76c758387bd7f9.png",
+    "static/media/bose-mockups.png": "./static/media/bose-mockups.f025cf53c16fd8571220.png",
+    "static/media/perspective.jpg": "./static/media/perspective.3785e8d2254605c7fba0.jpg",
+    "static/media/test.jpg": "./static/media/test.de9370567c5d3b60af25.jpg",
+    "static/media/PraizeWebsite.jpg": "./static/media/PraizeWebsite.b634b92e154a2f99d745.jpg",
+    "static/media/portrait.png": "./static/media/portrait.b50912b1633b62816c2a.png",
+    "static/media/SynovaHCM.jpg": "./static/media/SynovaHCM.b851649510f83a38a64d.jpg",
+    "static/media/test.avif": "./static/media/test.0d166d9b885026efff91.avif",
     "index.html": "./index.html",
-    "main.cad3f3d9.css.map": "./static/css/main.cad3f3d9.css.map",
-    "main.b8f6e351.js.map": "./static/js/main.b8f6e351.js.map",
+    "main.2bccf3f5.css.map": "./static/css/main.2bccf3f5.css.map",
+    "main.88df21f9.js.map": "./static/js/main.88df21f9.js.map",
     "453.1dd711a6.chunk.js.map": "./static/js/453.1dd711a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cad3f3d9.css",
-    "static/js/main.b8f6e351.js"
+    "static/css/main.2bccf3f5.css",
+    "static/js/main.88df21f9.js"
   ]
 }
