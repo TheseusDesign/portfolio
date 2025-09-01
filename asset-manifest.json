@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.6b51dde6.css",
-    "main.js": "./static/js/main.88df21f9.js",
+    "main.js": "./static/js/main.db4529d6.js",
     "static/js/453.1dd711a6.chunk.js": "./static/js/453.1dd711a6.chunk.js",
     "static/media/MetGala.png": "./static/media/MetGala.8c234a76c758387bd7f9.png",
     "static/media/bose-mockups.png": "./static/media/bose-mockups.f025cf53c16fd8571220.png",
@@ -13,11 +13,11 @@
     "static/media/test.avif": "./static/media/test.0d166d9b885026efff91.avif",
     "index.html": "./index.html",
     "main.6b51dde6.css.map": "./static/css/main.6b51dde6.css.map",
-    "main.88df21f9.js.map": "./static/js/main.88df21f9.js.map",
+    "main.db4529d6.js.map": "./static/js/main.db4529d6.js.map",
     "453.1dd711a6.chunk.js.map": "./static/js/453.1dd711a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b51dde6.css",
-    "static/js/main.88df21f9.js"
+    "static/js/main.db4529d6.js"
   ]
 }
