@@ -1,0 +1,15 @@
+.LandingPage {
+    display: flex;
+    flex-direction: row;
+
+    .main-column {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1200px) {
+    .LandingPage {
+        flex-direction: column;
+    }
+}
