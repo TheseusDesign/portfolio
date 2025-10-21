@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.1a5aec8e.css",
-    "main.js": "./static/js/main.fe0734c1.js",
-    "static/js/453.1dd711a6.chunk.js": "./static/js/453.1dd711a6.chunk.js",
-    "static/media/MetGala.png": "./static/media/MetGala.8c234a76c758387bd7f9.png",
-    "static/media/background-video-2.mp4": "./static/media/background-video-2.12ad711e0eeb787a11b0.mp4",
-    "static/media/bose-mockups.png": "./static/media/bose-mockups.f025cf53c16fd8571220.png",
-    "static/media/perspective.jpg": "./static/media/perspective.3785e8d2254605c7fba0.jpg",
-    "static/media/test.jpg": "./static/media/test.de9370567c5d3b60af25.jpg",
-    "static/media/PraizeWebsite.jpg": "./static/media/PraizeWebsite.b634b92e154a2f99d745.jpg",
-    "static/media/ifolio_gatech.png": "./static/media/ifolio_gatech.ab1e1c9195ff90056f70.png",
-    "static/media/portrait.png": "./static/media/portrait.b50912b1633b62816c2a.png",
-    "static/media/SynovaHCM.jpg": "./static/media/SynovaHCM.b851649510f83a38a64d.jpg",
-    "static/media/test.avif": "./static/media/test.0d166d9b885026efff91.avif",
-    "index.html": "./index.html",
-    "main.1a5aec8e.css.map": "./static/css/main.1a5aec8e.css.map",
-    "main.fe0734c1.js.map": "./static/js/main.fe0734c1.js.map",
-    "453.1dd711a6.chunk.js.map": "./static/js/453.1dd711a6.chunk.js.map"
+    "main.css": "/static/css/main.1a5aec8e.css",
+    "main.js": "/static/js/main.a1f39080.js",
+    "static/js/453.1dd711a6.chunk.js": "/static/js/453.1dd711a6.chunk.js",
+    "static/media/MetGala.png": "/static/media/MetGala.8c234a76c758387bd7f9.png",
+    "static/media/background-video-2.mp4": "/static/media/background-video-2.12ad711e0eeb787a11b0.mp4",
+    "static/media/bose-mockups.png": "/static/media/bose-mockups.f025cf53c16fd8571220.png",
+    "static/media/perspective.jpg": "/static/media/perspective.3785e8d2254605c7fba0.jpg",
+    "static/media/test.jpg": "/static/media/test.de9370567c5d3b60af25.jpg",
+    "static/media/PraizeWebsite.jpg": "/static/media/PraizeWebsite.b634b92e154a2f99d745.jpg",
+    "static/media/ifolio_gatech.png": "/static/media/ifolio_gatech.ab1e1c9195ff90056f70.png",
+    "static/media/portrait.png": "/static/media/portrait.b50912b1633b62816c2a.png",
+    "static/media/SynovaHCM.jpg": "/static/media/SynovaHCM.b851649510f83a38a64d.jpg",
+    "static/media/test.avif": "/static/media/test.0d166d9b885026efff91.avif",
+    "index.html": "/index.html",
+    "main.1a5aec8e.css.map": "/static/css/main.1a5aec8e.css.map",
+    "main.a1f39080.js.map": "/static/js/main.a1f39080.js.map",
+    "453.1dd711a6.chunk.js.map": "/static/js/453.1dd711a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a5aec8e.css",
-    "static/js/main.fe0734c1.js"
+    "static/js/main.a1f39080.js"
   ]
 }
